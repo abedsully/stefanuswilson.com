@@ -6,32 +6,15 @@ import asset2 from "../../assets/asset_foto2.jpeg";
 import asset3 from "../../assets/asset_foto3.jpeg";
 import asset4 from "../../assets/asset_foto4.png";
 
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { GrMail } from "react-icons/gr";
+import logo_it from "../../assets/it_binus_logo.jpeg";
+import logo_bncc from "../../assets/logo_bncc.jpg";
+import logo_ssc from "../../assets/logo_ssc.png";
+import logo_binus from "../../assets/logo_binus.jpg";
 
 import { Helmet } from "react-helmet";
-
-const product = {
-  images: [
-    {
-      src: asset1,
-      alt: "English Speech Competition @2019",
-    },
-    {
-      src: asset2,
-      alt: "Rewards Swift Student Challenge @2024",
-    },
-    {
-      src: asset3,
-      alt: "Dinner with Binus IT Division @2024",
-    },
-    {
-      src: asset4,
-      alt: "Prom Speech @2022",
-    },
-  ],
-};
+import ExperienceComponent from "../../components/experience/ExperienceComponent";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 
 const Experience = () => {
   return (
@@ -47,114 +30,59 @@ const Experience = () => {
           <Signature />
         </div>
 
-        <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Stefanus Albert Wilson is a dedicated and passionate software
-          engineer, with a strong interest in{" "}
-          <span className="font-semibold">
-            Back-End Development and iOS Engineering.
-          </span>{" "}
-          Renowned for his critical thinking and problem solving skills,
-          Stefanus is continually honing his skills by working on
-          high-performance applications that contribute to seamless user
-          experiences. He embraces new challenges as opportunities to further
-          develop his skills and deepen his expertise in software engineering.
-        </h1>
+        <ExperienceComponent
+          logo={logo_it}
+          link={"http://ict.binus.edu/"}
+          companyName={"Bina Nusantara IT Division"}
+          position={"Associate Developer"}
+          duration={"March 2024 - February 2025"}
+          responsibilities={[
+            "Develops and implements robust features using C# (ASP.NET) for backend APIs and both TypeScript and JavaScript (React) for frontend applications, enhancing system functionality and user experience.",
+            "Participates actively in daily scrum meetings, effectively communicating project progress and collaborating with team members to address challenges and meet deadlines.",
+            "Assures comprehensive documentation for codebases, ensuring maintainability and facilitating easier understanding for other developers.",
+          ]}
+        />
 
-        <div>
-          {/* Image gallery */}
-          <div className="mx-auto max-w-2xl lg:grid lg:max-w-7xl sm:grid-cols-3 lg:gap-x-4">
-            <div className="relative group aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-              <img
-                alt={product.images[0].alt}
-                src={product.images[0].src}
-                className="h-full w-full object-cover object-center hover:cursor-wait"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg">{product.images[0].alt}</p>
-              </div>
-            </div>
+        <ExperienceComponent
+          logo={logo_ssc}
+          link={
+            "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024"
+          }
+          companyName={"Swift Student Challenge Winner"}
+          position={"iOS Developer"}
+          duration={"November 2023 - March 2024 (5 months)"}
+          responsibilities={[
+            "Developed an Artificial Intelligence-based iOS application to recognize human’s emotion, perform sentiment analysis, and predict most dominant languages.",
+            "Utilized CreateML to train the Emotion Classifier Model using the FER-2013 dataset with seven emotion types",
+            "Adopted the MVC architecture pattern and code refactoring technique to ensure code modularity and reusability.",
+          ]}
+        />
 
-            <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-4">
-              <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                <img
-                  alt={product.images[1].alt}
-                  src={product.images[1].src}
-                  className="h-full w-full object-cover object-center"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg">{product.images[1].alt}</p>
-                </div>
-              </div>
+        <ExperienceComponent
+          logo={logo_bncc}
+          link={"https://bncc.net/"}
+          companyName={"Bina Nusantara Computer Club"}
+          position={"Back End Instructor"}
+          duration={"October 2023 - May 2024 (8 months)"}
+          responsibilities={[
+            "Instructed Back End Development using PHP Framework (Laravel).",
+            "Facilitated sessions on using GitHub as a source control platform.",
+            "Assessed both Mid and Final Projects as well as giving suggestions for potential improvements",
+          ]}
+        />
 
-              <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                <img
-                  alt={product.images[2].alt}
-                  src={product.images[2].src}
-                  className="h-full w-full object-cover object-center"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg">{product.images[2].alt}</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative group aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-              <img
-                alt={product.images[3].alt}
-                src={product.images[3].src}
-                className="h-full w-full object-cover object-center"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg">{product.images[3].alt}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          In 2024, Stefanus Albert was awarded a WWDC scholarship for his
-          exceptional submission to the{" "}
-          <a
-            href="https://developer.apple.com/swift-student-challenge/"
-            className="font-semibold underline"
-          >
-            Swift Student Challenge
-          </a>
-          . The challenge tasked applicants with creating an interactive app
-          playground on a topic of their choice to demonstrate their coding
-          passion.
-        </h1>
-
-        <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Stefanus's winning project, Intellectia, is a home for exploring
-          Artificial Intelligence, introducing the key concepts in{" "}
-          <span className="font-semibold">Computer Vision</span> and{" "}
-          <span className="font-semibold">Natural Language Processing.</span>{" "}
-          With interactive features like Emotion Classification, Language
-          Detection, and Sentiment Analysis, and built using frameworks such as{" "}
-          <span className="font-semibold">SwiftUI</span> and{" "}
-          <span className="font-semibold">CoreML.</span> Intellectia showcases
-          his technical skills while highlighting the potential of AI.
-        </h1>
-
-        <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Currently, Stefanus is a sophomore at Binus University specializing in
-          Intelligent Systems, focusing on the fundamentals of machine learning,
-          including Deep Learning, Computer Vision, Natural Language Processing,
-          and Speech Recognition.
-        </h1>
-
-        <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          In addition, he works as an associate developer at{" "}
-          <a href="http://ict.binus.edu/" className="font-semibold underline">
-            Binus IT Division
-          </a>
-          , where he builds internal applications for the rector. Between 2023
-          and 2024, he also taught Back-End Development in the{" "}
-          <a href="https://www.bncc.net" className="font-semibold underline">
-            BNCC (Bina Nusantara Computer Club)
-          </a>
-          , conducting weekly sessions for 13 weeks.
-        </h1>
+        <ExperienceComponent
+          logo={logo_binus}
+          link={"https://socs.binus.ac.id/"}
+          companyName={"Bina Nusantara University"}
+          position={"Undergraduate Computer Science Student"}
+          duration={"September 2022 - TBA"}
+          responsibilities={[
+            "Specializing in Intelligent Systems with AI-Related Courses: Deep Learning, Computer Vision, and Natural Language Processing",
+            "Collaborated with other peers to compete in Software Development and Business Case Competition (Gemastik).",
+            "Appointed as Bee Tutor Plus (Innovative programing aiming to improve student s English proficiency through individualized one-on-one instruction)",
+          ]}
+        />
 
         <h2 className="flex flex-col gap-[2rem] mt-[2rem]">
           <div className="flex gap-[2rem] justify-center">

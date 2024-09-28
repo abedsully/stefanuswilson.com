@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 
-const product = {
+const images = {
   images: [
     {
       src: asset1,
@@ -59,46 +59,46 @@ const About = () => {
           <div className="mx-auto max-w-2xl lg:grid lg:max-w-7xl sm:grid-cols-3 lg:gap-x-4">
             <div className="relative group aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
               <img
-                alt={product.images[0].alt}
-                src={product.images[0].src}
+                alt={images.images[0].alt}
+                src={images.images[0].src}
                 className="h-full w-full object-cover object-center hover:cursor-wait"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg">{product.images[0].alt}</p>
+                <p className="text-white text-lg">{images.images[0].alt}</p>
               </div>
             </div>
 
             <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-4">
               <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
                 <img
-                  alt={product.images[1].alt}
-                  src={product.images[1].src}
+                  alt={images.images[1].alt}
+                  src={images.images[1].src}
                   className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg">{product.images[1].alt}</p>
+                  <p className="text-white text-lg">{images.images[1].alt}</p>
                 </div>
               </div>
 
               <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
                 <img
-                  alt={product.images[2].alt}
-                  src={product.images[2].src}
+                  alt={images.images[2].alt}
+                  src={images.images[2].src}
                   className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg">{product.images[2].alt}</p>
+                  <p className="text-white text-lg">{images.images[2].alt}</p>
                 </div>
               </div>
             </div>
             <div className="relative group aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
               <img
-                alt={product.images[3].alt}
-                src={product.images[3].src}
+                alt={images.images[3].alt}
+                src={images.images[3].src}
                 className="h-full w-full object-cover object-center"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg">{product.images[3].alt}</p>
+                <p className="text-white text-lg">{images.images[3].alt}</p>
               </div>
             </div>
           </div>
