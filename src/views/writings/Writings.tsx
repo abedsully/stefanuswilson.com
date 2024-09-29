@@ -1,37 +1,9 @@
 import Navbar from "../../components/Navbar";
 import Signature from "../../components/Signature";
 
-import asset1 from "../../assets/asset_foto1.jpeg";
-import asset2 from "../../assets/asset_foto2.jpeg";
-import asset3 from "../../assets/asset_foto3.jpeg";
-import asset4 from "../../assets/asset_foto4.png";
 
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { GrMail } from "react-icons/gr";
 
 import { Helmet } from "react-helmet";
-
-const product = {
-  images: [
-    {
-      src: asset1,
-      alt: "English Speech Competition @2019",
-    },
-    {
-      src: asset2,
-      alt: "Rewards Swift Student Challenge @2024",
-    },
-    {
-      src: asset3,
-      alt: "Dinner with Binus IT Division @2024",
-    },
-    {
-      src: asset4,
-      alt: "Prom Speech @2022",
-    },
-  ],
-};
 
 const Writings = () => {
   return (
