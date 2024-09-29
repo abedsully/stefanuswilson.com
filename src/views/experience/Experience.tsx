@@ -1,11 +1,5 @@
 import Navbar from "../../components/Navbar";
 import Signature from "../../components/Signature";
-
-import asset1 from "../../assets/asset_foto1.jpeg";
-import asset2 from "../../assets/asset_foto2.jpeg";
-import asset3 from "../../assets/asset_foto3.jpeg";
-import asset4 from "../../assets/asset_foto4.png";
-
 import logo_it from "../../assets/it_binus_logo.jpeg";
 import logo_bncc from "../../assets/logo_bncc.jpg";
 import logo_ssc from "../../assets/logo_ssc.png";
