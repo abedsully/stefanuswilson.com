@@ -42,8 +42,7 @@ const About = () => {
         </div>
 
         <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Stefanus Albert Wilson is a dedicated and passionate software
-          engineer, with a strong interest in{" "}
+          Stefanus Albert Wilson is a software enthusiast, with a strong interest in{" "}
           <span className="font-semibold">
             Back-End Development and iOS Engineering.
           </span>{" "}
