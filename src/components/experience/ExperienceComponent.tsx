@@ -9,7 +9,7 @@ const ExperienceComponent = ({
   responsibilities,
 }: IExperience) => {
   return (
-    <div className="flex text-left items-start gap-[2rem] mt-[1rem] w-full">
+    <div className="flex text-left items-start gap-[2rem] mt-[1rem] w-full font-inter">
       <img src={logo} alt={`${companyName} logo`} className="w-28 h-28 mt-2" />
 
       <div className="flex flex-col w-full gap-3">

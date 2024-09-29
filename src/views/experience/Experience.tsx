@@ -17,7 +17,7 @@ const Experience = () => {
         <title>Experience | Stefanus Albert Wilson</title>
       </Helmet>
 
-      <div className="flex flex-col xl:px-[18rem] gap-[2rem] text-gray-700">
+      <div className="flex flex-col xl:px-[18rem] gap-[2rem] text-gray-700 font-inter">
         <Navbar />
 
         <div className="flex justify-center">
