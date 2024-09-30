@@ -42,8 +42,7 @@ const About = () => {
         </div>
 
         <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Stefanus Albert Wilson is a dedicated and passionate software
-          engineer, with a strong interest in{" "}
+          Stefanus Albert Wilson is a software enthusiast, with a strong interest in{" "}
           <span className="font-semibold">
             Back-End Development and iOS Engineering.
           </span>{" "}
@@ -150,14 +149,35 @@ const About = () => {
           , conducting weekly sessions for 13 weeks.
         </h1>
 
-        <h2 className="flex flex-col gap-[2rem] mt-[2rem]">
-            <div className="flex gap-[2rem] justify-center">
-                <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer"><FaLinkedin /> LinkedIn</div>
-                <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer"><FaGithub /> Github</div>
-                <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer"><GrMail /> Mail</div>
-            </div>
-          Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
-        </h2>
+<h2 className="flex flex-col gap-[2rem] mt-[2rem]">
+  <div className="flex gap-[2rem] justify-center">
+    <a
+      href="https://www.linkedin.com/in/stefanuswilson"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+    >
+      <FaLinkedin /> LinkedIn
+    </a>
+    <a
+      href="https://www.github.com/abedsully"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+    >
+      <FaGithub /> Github
+    </a>
+    <a
+      href="mailto:stefanus.wilsonn@gmail.com"
+      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+    >
+      <GrMail /> Mail
+    </a>
+  </div>
+  Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
+</h2>
+
+
       </div>
     </>
   );
