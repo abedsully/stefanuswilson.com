@@ -7,7 +7,6 @@ const ProjectComponent = ({
   projectRole,
   projectDate,
   projectTech,
-  projectType,
   projectLink,
 }: IProjectComponent) => {
   return (
@@ -29,11 +28,11 @@ const ProjectComponent = ({
       <h2 className="text-start text-sm mt-2">
         <span className="w-[315px] font-semibold">{projectName}</span> is{" "}
         {projectDescription}
-        <p className="hidden">{projectType}</p>
+        <p className="hidden">{}</p>
       </h2>
       <ul className="list-disc w-full">
         <div className="flex justify-between items-center w-full">
-          <div className="flex">
+          <div className="flex gap-1">
             {projectTech.map((tech, index) => (
               <li key={index} className="flex mt-1">
                 <img

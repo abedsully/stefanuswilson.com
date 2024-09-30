@@ -10,7 +10,7 @@ interface IProjectComponent {
     projectRole: string;
     projectDate: string;
     projectTech: IProjectTech[];
-    projectType: string;
+    projectType?: string;
     projectLink: string;
 }
 
