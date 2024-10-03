@@ -43,7 +43,8 @@ const projects = {
         { icon: coreml, tech: "CoreML" },
       ],
       projectType: "Mobile",
-      projectLink: "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024",
+      projectLink:
+        "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024",
     },
     {
       projectName: "Bincang Bareng",
@@ -52,9 +53,7 @@ const projects = {
         "meaningful conversation app with your loved one. It utilizes Swift with framework of UIKit and Realm Swift to persist data",
       projectRole: "iOS Developer",
       projectDate: "October 2023",
-      projectTech: [
-        { icon: swift, tech: "Swift" },
-      ],
+      projectTech: [{ icon: swift, tech: "Swift" }],
       projectType: "Mobile",
       projectLink: "https://github.com/abedsully/BincangBareng",
     },
@@ -93,15 +92,28 @@ const Project = () => {
 
         <h2 className="flex flex-col gap-[2rem] mt-[8rem]">
           <div className="flex gap-[2rem] justify-center">
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/stefanuswilson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+            >
               <FaLinkedin /> LinkedIn
-            </div>
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
+            </a>
+            <a
+              href="https://www.github.com/abedsully"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+            >
               <FaGithub /> Github
-            </div>
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
+            </a>
+            <a
+              href="mailto:stefanus.wilsonn@gmail.com"
+              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+            >
               <GrMail /> Mail
-            </div>
+            </a>
           </div>
           Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
         </h2>
