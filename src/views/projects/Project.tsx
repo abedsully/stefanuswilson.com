@@ -17,20 +17,6 @@ import Navbar from "../../components/Navbar";
 const projects = {
   projects: [
     {
-      projectName: "Intellectia",
-      projectLogo: intellectia_logo,
-      projectDescription:
-        "my winning submission for the Swift Student Challenge 2024. It introduces the concept of AI in Computer Vision and Natural Language Processing.",
-      projectRole: "iOS Developer",
-      projectDate: "June 2024",
-      projectTech: [
-        { icon: swift, tech: "Swift" },
-        { icon: coreml, tech: "CoreML" },
-      ],
-      projectType: "Mobile",
-      projectLink: "https://github.com/abedsully/Intellectia",
-    },
-    {
       projectName: "IShowShop",
       projectLogo: ishowshop_logo,
       projectDescription:
@@ -44,6 +30,20 @@ const projects = {
       ],
       projectType: "Mobile",
       projectLink: "https://github.com/abedsully/IShowShop",
+    },
+    {
+      projectName: "Intellectia",
+      projectLogo: intellectia_logo,
+      projectDescription:
+        "my winning submission for the Swift Student Challenge 2024. It introduces the concept of AI in Computer Vision and Natural Language Processing.",
+      projectRole: "iOS Developer",
+      projectDate: "March 2024",
+      projectTech: [
+        { icon: swift, tech: "Swift" },
+        { icon: coreml, tech: "CoreML" },
+      ],
+      projectType: "Mobile",
+      projectLink: "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024",
     },
     {
       projectName: "Bincang Bareng",
