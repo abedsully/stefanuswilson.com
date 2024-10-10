@@ -1,26 +1,51 @@
-import swift from "../../assets/swift.png";
-import firebase from "../../assets/firebase.png";
-import coreml from "../../assets/coreml.png";
-import ishowshop_logo from "../../assets/ishowshop_logo.png";
-import intellectia_logo from "../../assets/intellectia_logo.png";
-import bincang_bareng_logo from "../../assets/logo_bincang_bareng.png";
+// Area Import Tech/Programming Language Icon
+import swift from "../../assets/techstacks/swift.png";
+import typescript from "../../assets/techstacks/typescript.png";
+import go from "../../assets/techstacks/Go-Logo_Blue.svg"
+import firebase from "../../assets/techstacks/firebase.png";
+import coreml from "../../assets/techstacks/coreml.png";
+import php from "../../assets/techstacks/php.png"
+import laravel from "../../assets/techstacks/laravel.png"
+import react from "../../assets/techstacks/react.png"
 
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { GrMail } from "react-icons/gr";
+// Area Import App Logo
+import ishowshop_logo from "../../assets/app_logo/ishowshop_logo.png";
+import intellectia_logo from "../../assets/app_logo/intellectia_logo.png";
+import bincang_bareng_logo from "../../assets/app_logo/logo_bincang_bareng.png";
+import moviehub_logo from "../../assets/app_logo/moviehub_logo.png"
+import gabungaja_logo from "../../assets/app_logo/gabungaja_logo.png"
+import storeegg_logo from "../../assets/app_logo/storeegg_logo.png"
 
+// Area Modify Helmet Title
 import { Helmet } from "react-helmet";
+
+// Area Import Component
 import ProjectComponent from "../../components/project/ProjectComponent";
 import Signature from "../../components/Signature";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const projects = {
   projects: [
     {
+      projectName: "MovieHub",
+      projectLogo: moviehub_logo,
+      projectDescription:
+        "is a platform for movie enthusiasts to explore trending movies, series, and actors. It offers a seamless experience for discovering and discussing content.",
+      projectRole: "Full Stack Developer",
+      projectDate: "October 2024",
+      projectTech: [
+        { icon: typescript, tech: "Typescript" },  
+        { icon: go, tech: "Go" }
+      ],
+      projectType: "Website",
+      projectLink: "https://github.com/abedsully/MovieHub-Go-React",
+    },
+    {
       projectName: "IShowShop",
       projectLogo: ishowshop_logo,
       projectDescription:
-        "a shopping app with features of Speech Recognition (SR-Based) searching functionality, Wallet TopUp, Favorite Products, and Discount Voucher",
+        "a shopping app with features of Speech Recognition (SR-Based) searching functionality, Wallet TopUp, Favorite Products, and Discount Voucher.",
       projectRole: "iOS Developer",
       projectDate: "June 2024",
       projectTech: [
@@ -31,6 +56,21 @@ const projects = {
       projectType: "Mobile",
       projectLink: "https://github.com/abedsully/IShowShop",
     },
+    {
+      projectName: "GabungAja",
+      projectLogo: gabungaja_logo,
+      projectDescription:
+        "your one-stop destination to discover communities, make new friends, and embark on exciting gaming adventures together.",
+      projectRole: "Full Stack Developer",
+      projectDate: "April 2024",
+      projectTech: [
+        { icon: laravel, tech: "Laravel" },
+        { icon: php, tech: "PHP" },
+      ],
+      projectType: "Website",
+      projectLink: "https://github.com/abedsully/GabungAja",
+    },
+
     {
       projectName: "Intellectia",
       projectLogo: intellectia_logo,
@@ -45,6 +85,20 @@ const projects = {
       projectType: "Mobile",
       projectLink:
         "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024",
+    },
+    {
+      projectName: "Storeegg",
+      projectLogo: storeegg_logo,
+      projectDescription:
+        "my take-home project for qualifying to Bina Nusantara IT Division, functioning as an E-commerce app to show, purchase, and sell products.",
+      projectRole: "Mobile Developer",
+      projectDate: "November 2023",
+      projectTech: [
+        { icon: typescript, tech: "Typescript" },
+        { icon: react, tech: "React Native" }
+      ],
+      projectType: "Mobile",
+      projectLink: "https://github.com/abedsully/Storegg",
     },
     {
       projectName: "Bincang Bareng",
@@ -90,33 +144,9 @@ const Project = () => {
           ))}
         </div>
 
-        <h2 className="flex flex-col gap-[2rem] mt-[8rem]">
-          <div className="flex gap-[2rem] justify-center">
-            <a
-              href="https://www.linkedin.com/in/stefanuswilson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-            >
-              <FaLinkedin /> LinkedIn
-            </a>
-            <a
-              href="https://www.github.com/abedsully"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-            >
-              <FaGithub /> Github
-            </a>
-            <a
-              href="mailto:stefanus.wilsonn@gmail.com"
-              className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-            >
-              <GrMail /> Mail
-            </a>
-          </div>
-          Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
-        </h2>
+        <div className="mt-[8rem]">
+          <Footer />
+        </div>
       </div>
     </>
   );

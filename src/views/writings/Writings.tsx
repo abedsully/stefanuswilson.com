@@ -20,20 +20,6 @@ const Writings = () => {
 
         <h1 className="w-full mt-[15rem] text-lg">This page is still in development, Stay Tune 😀😀</h1>
 
-        {/* <h2 className="flex flex-col gap-[2rem] mt-[2rem]">
-          <div className="flex gap-[2rem] justify-center">
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
-              <FaLinkedin /> LinkedIn
-            </div>
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
-              <FaGithub /> Github
-            </div>
-            <div className="flex items-center gap-1 text-sm hover:underline cursor-pointer">
-              <GrMail /> Mail
-            </div>
-          </div>
-          Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
-        </h2> */}
       </div>
     </>
   );

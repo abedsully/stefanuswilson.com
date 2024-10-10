@@ -44,7 +44,7 @@ const ProjectComponent = ({
             ))}
           </div>
 
-          <h4 className="text-sm mt-2 ml-2">
+          <h4 className="text-sm mt-2 ml-2 text-end">
             {projectRole} | {projectDate}
           </h4>
         </div>

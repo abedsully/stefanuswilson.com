@@ -1,14 +1,13 @@
-import Navbar from "../../components/Navbar";
-import Signature from "../../components/Signature";
-
+// Area Import Assets
 import asset1 from "../../assets/asset_foto1.jpeg";
 import asset2 from "../../assets/asset_foto2.jpeg";
 import asset3 from "../../assets/asset_foto3.jpeg";
 import asset4 from "../../assets/asset_foto4.png";
 
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { GrMail } from "react-icons/gr";
+// Area Import Component
+import Navbar from "../../components/Navbar";
+import Signature from "../../components/Signature";
+import Footer from "../../components/Footer";
 
 const images = {
   images: [
@@ -42,15 +41,16 @@ const About = () => {
         </div>
 
         <h1 className="font-inter w-full text-start space-y-4 leading-7">
-          Stefanus Albert Wilson is a software enthusiast, with a strong interest in{" "}
+          Stefanus Albert Wilson is a software enthusiast, with a strong
+          interest in{" "}
           <span className="font-semibold">
             Back-End Development and iOS Engineering.
           </span>{" "}
           Renowned for his critical thinking and problem solving skills,
           Stefanus is continually honing his skills by working on
-          high-performance applications that contribute to seamless user experiences.
-          He embraces new challenges as opportunities to further develop his
-          skills and deepen his expertise in software engineering.
+          high-performance applications that contribute to seamless user
+          experiences. He embraces new challenges as opportunities to further
+          develop his skills and deepen his expertise in software engineering.
         </h1>
 
         <div>
@@ -111,8 +111,8 @@ const About = () => {
             className="font-semibold underline"
           >
             Swift Student Challenge
-          </a>.{" "}
-          The challenge tasked applicants with creating an interactive app
+          </a>
+          . The challenge tasked applicants with creating an interactive app
           playground on a topic of their choice to demonstrate their coding
           passion.
         </h1>
@@ -141,42 +141,17 @@ const About = () => {
           <a href="http://ict.binus.edu/" className="font-semibold underline">
             Binus IT Division
           </a>
-          , where he builds internal applications for the rector. Between 2023 and
-          2024, he also taught Back-End Development in the{" "}
+          , where he builds internal applications for the rector. Between 2023
+          and 2024, he also taught Back-End Development in the{" "}
           <a href="https://www.bncc.net" className="font-semibold underline">
             BNCC (Bina Nusantara Computer Club)
           </a>
           , conducting weekly sessions for 13 weeks.
         </h1>
 
-<h2 className="flex flex-col gap-[2rem] mt-[2rem]">
-  <div className="flex gap-[2rem] justify-center">
-    <a
-      href="https://www.linkedin.com/in/stefanuswilson"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-    >
-      <FaLinkedin /> LinkedIn
-    </a>
-    <a
-      href="https://www.github.com/abedsully"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-    >
-      <FaGithub /> Github
-    </a>
-    <a
-      href="mailto:stefanus.wilsonn@gmail.com"
-      className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
-    >
-      <GrMail /> Mail
-    </a>
-  </div>
-  Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
-</h2>
-
+        <div className="mt-[2rem]">
+          <Footer />
+        </div>
 
       </div>
     </>
