@@ -49,10 +49,8 @@ const ProjectComponent = ({
           </h4>
         </div>
 
-        <a className="flex items-center mt-6 justify-end text-gray-400" href={projectLink}>
-          {/* Horizontal Line with a Fixed Width */}
-          <div className="w-16 border-t border-gray-400 mr-2"></div> {/* Adjust the width as needed */}
-          {/* View Details Text */}
+        <a className="flex items-center mt-6 justify-end text-gray-400 hover:text-gray-700 hover:font-medium" href={projectLink}>
+          <div className="w-16 border-t border-gray-400 mr-2"></div>
           <p className="text-sm">View Details</p>
         </a>
       </ul>
