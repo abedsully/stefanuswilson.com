@@ -3,7 +3,7 @@ import { IDefaultRouter } from "../interfaces/IDefaultRouter";
 import routerAbout from "../views/about/About.router";
 import routerProject from "../views/projects/Project.router";
 import routerExperience from "../views/experience/Experience.router";
-import routerWritings from "../views/writings/Writing.router";
+import routerWritings from "../views/others/Others.router";
 
 export const routes: IDefaultRouter[] = [
     ...routerAbout,

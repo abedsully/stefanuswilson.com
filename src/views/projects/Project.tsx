@@ -25,6 +25,8 @@ import Signature from "../../components/Signature";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
+import { motion } from 'framer-motion';
+
 const projects = {
   projects: [
     {
@@ -121,6 +123,12 @@ const Project = () => {
         <title>Projects | Stefanus Albert Wilson</title>
       </Helmet>
 
+      <motion.section
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+
       <div className="flex flex-col xl:px-[18rem] gap-[2rem] text-gray-700 font-inter">
         <Navbar />
 
@@ -148,6 +156,8 @@ const Project = () => {
           <Footer />
         </div>
       </div>
+
+      </motion.section>
     </>
   );
 };

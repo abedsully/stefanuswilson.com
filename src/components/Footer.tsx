@@ -1,3 +1,4 @@
+import { DocumentTextIcon } from "@heroicons/react/20/solid";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 
@@ -26,6 +27,14 @@ const Footer = () => {
           className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
         >
           <GrMail /> Mail
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1qFipk-GcKYf98PsI72bjx5-NsJedBbc1/view?usp=share_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-sm hover:underline cursor-pointer"
+        >
+          <DocumentTextIcon className="w-4 h-4"/> CV
         </a>
       </div>
       Copyright © {new Date().getFullYear()} - Stefanus Albert Wilson
