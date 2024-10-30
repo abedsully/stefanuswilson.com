@@ -11,7 +11,7 @@ const Writings = () => {
   return (
     <>
       <Helmet>
-        <title>Writings | Stefanus Albert Wilson</title>
+        <title>Others | Stefanus Albert Wilson</title>
       </Helmet>
 
       <motion.section
