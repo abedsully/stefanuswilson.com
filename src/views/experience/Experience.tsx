@@ -38,7 +38,7 @@ const Experience = () => {
 
         <ExperienceComponent
           logo={logo_hibank}
-          link={"http://ict.binus.edu/"}
+          link={"https://www.hibank.co.id"}
           companyName={"PT Bank Hibank Indonesia"}
           position={"IT Developer"}
           duration={"February 2025 - Now"}
