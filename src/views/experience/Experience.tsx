@@ -3,6 +3,7 @@ import logo_it from "../../assets/it_binus_logo.jpeg";
 import logo_bncc from "../../assets/logo_bncc.jpg";
 import logo_ssc from "../../assets/logo_ssc.png";
 import logo_binus from "../../assets/logo_binus.jpg";
+import logo_hibank from "../../assets/Hibank.svg.png";
 
 // Area Modify Helmet Title
 import { Helmet } from "react-helmet";
@@ -34,6 +35,17 @@ const Experience = () => {
         <div className="flex justify-center">
           <Signature />
         </div>
+
+        <ExperienceComponent
+          logo={logo_hibank}
+          link={"http://ict.binus.edu/"}
+          companyName={"PT Bank Hibank Indonesia"}
+          position={"IT Developer"}
+          duration={"February 2025 - Now"}
+          responsibilities={[
+            "TBA",
+          ]}
+        />
 
         <ExperienceComponent
           logo={logo_it}
