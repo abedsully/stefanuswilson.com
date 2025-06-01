@@ -1,7 +1,7 @@
 // Area Import Assets
 import asset1 from "../../assets/asset_foto1.jpeg";
 import asset2 from "../../assets/asset_foto2.jpeg";
-import asset3 from "../../assets/asset_foto3.jpeg";
+import asset3 from "../../assets/asset_foto3.jpg";
 import asset4 from "../../assets/asset_foto4.png";
 
 // Area Import Component
@@ -15,7 +15,7 @@ const images = {
   images: [
     {
       src: asset1,
-      alt: "English Speech Competition @2019",
+      alt: "Apple's Swift Student Challenge @2025",
     },
     {
       src: asset2,
@@ -23,7 +23,7 @@ const images = {
     },
     {
       src: asset3,
-      alt: "Dinner with Binus IT Division @2024",
+      alt: "English Speech Competition @2019",
     },
     {
       src: asset4,
@@ -65,8 +65,8 @@ const About = () => {
             <div className="mx-auto max-w-2xl lg:grid lg:max-w-7xl sm:grid-cols-3 lg:gap-x-4">
               <div className="relative group aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
                 <img
-                  alt={images.images[0].alt}
-                  src={images.images[0].src}
+                  alt={images.images[2].alt}
+                  src={images.images[2].src}
                   className="h-full w-full object-cover object-center hover:cursor-wait"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -88,8 +88,8 @@ const About = () => {
 
                 <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
                   <img
-                    alt={images.images[2].alt}
-                    src={images.images[2].src}
+                    alt={images.images[0].alt}
+                    src={images.images[0].src}
                     className="h-full w-full object-cover object-center"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
