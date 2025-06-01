@@ -1,9 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Signature from "../../components/Signature";
-import Book1 from "../../assets/book_atomic.jpg";
-
 import { Helmet } from "react-helmet";
-import ishowshop_logo from "../../assets/app_logo/ishowshop_logo.png";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import FeaturedMediaCard from "../../components/others/FeatureMediaCard";
