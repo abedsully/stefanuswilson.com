@@ -15,6 +15,7 @@ import bincang_bareng_logo from "../../assets/app_logo/logo_bincang_bareng.png";
 import moviehub_logo from "../../assets/app_logo/moviehub_logo.png"
 import gabungaja_logo from "../../assets/app_logo/gabungaja_logo.png"
 import storeegg_logo from "../../assets/app_logo/storeegg_logo.png"
+import guardup_logo from "../../assets/app_logo/guardup_logo.png"
 
 // Area Modify Helmet Title
 import { Helmet } from "react-helmet";
@@ -30,10 +31,24 @@ import { motion } from 'framer-motion';
 const projects = {
   projects: [
     {
+      projectName: "GuardUp",
+      projectLogo: guardup_logo,
+      projectDescription:
+        "my winning submission for Swift Student Challenge 2024, it aims to combat bullying by creating a supportive, engaging, and safe environment where users can find comfort and take proactive steps to protect themselves.",
+      projectRole: "iOS Developer",
+      projectDate: "March 2025",
+      projectTech: [
+        { icon: swift, tech: "Swift" },  
+        { icon: coreml, tech: "Core ML" }
+      ],
+      projectType: "Mobile",
+      projectLink: "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2025",
+    },
+    {
       projectName: "MovieHub",
       projectLogo: moviehub_logo,
       projectDescription:
-        "is a platform for movie enthusiasts to explore trending movies, series, and actors. It offers a seamless experience for discovering and discussing content.",
+        "a platform for movie enthusiasts to explore trending movies, series, and actors. It offers a seamless experience for discovering and discussing content.",
       projectRole: "Full Stack Developer",
       projectDate: "October 2024",
       projectTech: [
@@ -82,7 +97,7 @@ const projects = {
       projectDate: "March 2024",
       projectTech: [
         { icon: swift, tech: "Swift" },
-        { icon: coreml, tech: "CoreML" },
+        { icon: coreml, tech: "CoreML" }
       ],
       projectType: "Mobile",
       projectLink:

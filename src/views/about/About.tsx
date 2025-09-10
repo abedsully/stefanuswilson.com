@@ -1,8 +1,7 @@
 // Area Import Assets
-import asset1 from "../../assets/asset_foto1.jpeg";
+import asset1 from "../../assets/asset_foto1.png";
 import asset2 from "../../assets/asset_foto2.jpeg";
 import asset3 from "../../assets/asset_foto3.jpg";
-import asset4 from "../../assets/asset_foto4.png";
 
 // Area Import Component
 import Navbar from "../../components/Navbar";
@@ -15,19 +14,14 @@ const images = {
   images: [
     {
       src: asset1,
+    },
+    {
+      src: asset3,
       alt: "Apple's Swift Student Challenge @2025",
     },
     {
       src: asset2,
       alt: "Rewards Swift Student Challenge @2024",
-    },
-    {
-      src: asset3,
-      alt: "English Speech Competition @2019",
-    },
-    {
-      src: asset4,
-      alt: "Prom Speech @2022",
     },
   ],
 };
@@ -48,112 +42,100 @@ const About = () => {
           </div>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Stefanus Albert Wilson is a software enthusiast, with a strong
+            Stefanus Albert Wilson is a software enthusiast with a strong
             interest in{" "}
             <span className="font-semibold">
               Back-End Development and iOS Engineering.
             </span>{" "}
-            Renowned for his critical thinking and problem solving skills,
-            Stefanus is continually honing his skills by working on
-            high-performance applications that contribute to seamless user
-            experiences. He embraces new challenges as opportunities to further
-            develop his skills and deepen his expertise in software engineering.
+            Renowned for his critical thinking and problem-solving skills,
+            Stefanus continues to refine his expertise by building applications
+            that deliver meaningful impact and reliable user experiences.
           </h1>
 
           <div>
             {/* Image gallery */}
-            <div className="mx-auto max-w-2xl lg:grid lg:max-w-7xl sm:grid-cols-3 lg:gap-x-4">
-              <div className="relative group aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* First image */}
+              <div className="relative group aspect-h-4 aspect-w-3 overflow-hidden rounded-lg">
                 <img
-                  alt={images.images[2].alt}
-                  src={images.images[2].src}
-                  className="h-full w-full object-cover object-center hover:cursor-wait"
+                  alt={images.images[0].alt}
+                  src={images.images[0].src}
+                  className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-lg">{images.images[0].alt}</p>
                 </div>
               </div>
 
-              <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-4">
-                <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                  <img
-                    alt={images.images[1].alt}
-                    src={images.images[1].src}
-                    className="h-full w-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-white text-lg">{images.images[1].alt}</p>
-                  </div>
-                </div>
-
-                <div className="relative group aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                  <img
-                    alt={images.images[0].alt}
-                    src={images.images[0].src}
-                    className="h-full w-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-white text-lg">{images.images[2].alt}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="relative group aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+              {/* Second image */}
+              <div className="relative group aspect-h-4 aspect-w-3 overflow-hidden rounded-lg">
                 <img
-                  alt={images.images[3].alt}
-                  src={images.images[3].src}
-                  className="h-full w-full object-cover object-center"
+                  alt={images.images[1].alt}
+                  src={images.images[1].src}
+                  className="h-full w-full object-cover object-center scale-125"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg">{images.images[3].alt}</p>
+                  <p className="text-white text-lg">{images.images[1].alt}</p>
+                </div>
+              </div>
+
+              {/* Third image */}
+              <div className="relative group aspect-h-4 aspect-w-3 overflow-hidden rounded-lg">
+                <img
+                  alt={images.images[2].alt}
+                  src={images.images[2].src}
+                  className="h-full w-full object-cover object-[20%]"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-lg">{images.images[2].alt}</p>
                 </div>
               </div>
             </div>
           </div>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            In 2024, Stefanus Albert was awarded a WWDC scholarship for his
-            exceptional submission to the{" "}
+            In both <span className="font-semibold">2024</span> and{" "}
+            <span className="font-semibold">2025</span>, Stefanus Albert was
+            awarded the prestigious{" "}
             <a
               href="https://developer.apple.com/swift-student-challenge/"
               className="font-semibold underline"
             >
-              Swift Student Challenge
+              Apple Swift Student Challenge
             </a>
-            . The challenge tasked applicants with creating an interactive app
-            playground on a topic of their choice to demonstrate their coding
-            passion.
+            , marking his achievement as a{" "}
+            <span className="font-semibold">two-time WWDC winner</span>. This
+            recognition reflects his enduring passion for{" "}
+            <span className="font-semibold">iOS engineering</span> and his
+            ability to bring innovative ideas into impactful applications.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Stefanus's winning project, Intellectia, is a home for exploring
-            Artificial Intelligence, introducing the key concepts in{" "}
-            <span className="font-semibold">Computer Vision</span> and{" "}
-            <span className="font-semibold">Natural Language Processing.</span>{" "}
-            With interactive features like Emotion Classification, Language
-            Detection, and Sentiment Analysis, and built using frameworks such
-            as <span className="font-semibold">SwiftUI</span> and{" "}
-            <span className="font-semibold">CoreML.</span> Intellectia showcases
-            his technical skills while highlighting the potential of AI.
+            Alongside his passion for iOS, Stefanus is currently focusing on{" "}
+            <span className="font-semibold">Back-End Engineering</span>, where
+            he explores system design, scalability, and performance
+            optimization. His work emphasizes building reliable, efficient, and
+            maintainable systems that support modern applications and high-level
+            infrastructure needs.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Currently, Stefanus is a sophomore at Binus University specializing
-            in Intelligent Systems, focusing on the fundamentals of machine
-            learning, including Deep Learning, Computer Vision, Natural Language
-            Processing, and Speech Recognition.
+            Currently, Stefanus is in his third year (sixth semester) at Binus
+            University, specializing in Intelligent Systems, where he deepens
+            his understanding of machine learning fundamentals, including Deep
+            Learning, Computer Vision, Natural Language Processing, and Speech
+            Recognition.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            In addition, he works as an associate developer at{" "}
-            <a href="http://ict.binus.edu/" className="font-semibold underline">
-              Binus IT Division
+            Alongside his studies, he works as an IT Developer at <span> </span>
+            <a href="https://hibank.co.id" className="font-semibold underline">
+              PT Bank Hibank Indonesia
             </a>
-            , where he builds internal applications for the rector. Between 2023
-            and 2024, he also taught Back-End Development in the{" "}
-            <a href="https://www.bncc.net" className="font-semibold underline">
-              BNCC (Bina Nusantara Computer Club)
-            </a>
-            , conducting weekly sessions for 13 weeks.
+            . In this role, he contributes to modernizing internal systems by
+            developing scalable backend services, enhancing system architecture,
+            and improving application reliability to better support business
+            operations.
           </h1>
 
           <div className="mt-[2rem]">

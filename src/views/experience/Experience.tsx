@@ -43,7 +43,11 @@ const Experience = () => {
           position={"IT Developer"}
           duration={"February 2025 - Now"}
           responsibilities={[
-            "TBA",
+            "Revamped Biller Switching application to adopt modern, modular, and scalable architecture, enabling easier system maintenance and future enhancements.",
+            "Developed RESTful API services using Java Spring Boot to support efficient integration between backend systems.",
+            "Built responsive and interactive user interfaces using React with TypeScript, improving component's usability and project's modularity",
+            "Implemented system observability and log monitoring using the ELK (Elasticsearch, Logstash, Kibana) stack, ensuring better error tracking and performance monitoring.",
+            "Enhanced operational flexibility for the Biller Switching team by simplifying adjustment processes (e.g., updating outdated product pricing) without requiring complex code changes.",
           ]}
         />
 
