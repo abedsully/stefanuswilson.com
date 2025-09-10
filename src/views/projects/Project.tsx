@@ -34,7 +34,7 @@ const projects = {
       projectName: "GuardUp",
       projectLogo: guardup_logo,
       projectDescription:
-        "my winning submission for Swift Student Challenge 2024, it aims to combat bullying by creating a supportive, engaging, and safe environment where users can find comfort and take proactive steps to protect themselves.",
+        "my winning submission for Swift Student Challenge 2025, it aims to combat bullying by creating a supportive, engaging, and safe environment where users can find comfort and take proactive steps to protect themselves.",
       projectRole: "iOS Developer",
       projectDate: "March 2025",
       projectTech: [
