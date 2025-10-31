@@ -14,7 +14,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const renderNavLinks = () => (
-    <div className="flex justify-center gap-[2rem] xl:gap-[8rem]">
+    <div className="flex justify-center gap-[2rem] xl:gap-[10rem]">
       {navbarRoutes.map((link) => (
         <a
           key={link.name}

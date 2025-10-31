@@ -34,7 +34,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="flex flex-col xl:px-[18rem] gap-[2rem] text-gray-700 font-inter">
+        <div className="flex flex-col xl:px-[16rem] gap-[2rem] text-gray-700 font-inter">
           <Navbar />
 
           <div className="flex justify-center">

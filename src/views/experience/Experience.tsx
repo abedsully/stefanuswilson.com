@@ -1,8 +1,6 @@
 // Area Import Assets
 import logo_it from "../../assets/it_binus_logo.jpeg";
 import logo_bncc from "../../assets/logo_bncc.jpg";
-import logo_ssc from "../../assets/logo_ssc.png";
-import logo_binus from "../../assets/logo_binus.jpg";
 import logo_hibank from "../../assets/Hibank.svg.png";
 
 // Area Modify Helmet Title
@@ -29,7 +27,7 @@ const Experience = () => {
         transition={{ duration: 0.5 }}
       >
 
-      <div className="flex flex-col xl:px-[18rem] gap-[2rem] text-gray-700 font-inter">
+      <div className="flex flex-col xl:px-[16rem] gap-[2rem] text-gray-700 font-inter">
         <Navbar />
 
         <div className="flex justify-center">
@@ -41,13 +39,13 @@ const Experience = () => {
           link={"https://www.hibank.co.id"}
           companyName={"PT Bank Hibank Indonesia"}
           position={"IT Developer"}
-          duration={"February 2025 - Now"}
+          duration={"February 2025 - Present"}
           responsibilities={[
-            "Revamped Biller Switching application to adopt modern, modular, and scalable architecture, enabling easier system maintenance and future enhancements.",
-            "Developed RESTful API services using Java Spring Boot to support efficient integration between backend systems.",
-            "Built responsive and interactive user interfaces using React with TypeScript, improving component's usability and project's modularity",
-            "Implemented system observability and log monitoring using the ELK (Elasticsearch, Logstash, Kibana) stack, ensuring better error tracking and performance monitoring.",
-            "Enhanced operational flexibility for the Biller Switching team by simplifying adjustment processes (e.g., updating outdated product pricing) without requiring complex code changes.",
+            "Increased data reconciliation efficiency by 50% by revamping the Biller Switching application using Spring Boot to support multi-file uploads eliminating manual daily file handling (reducing backlog processing from up to 40 files to a single batch).",
+            "Enhanced user experience and modularity by rebuilding the frontend with React and TypeScript, resulting in faster load times, fewer UI issues, and easier component maintenance.",
+            "Implemented system observability and log monitoring using the ELK (Elasticsearch, Logstash, Kibana) stack, significantly improving error visibility, accelerating issue resolution, and enabling proactive system performance monitoring.",
+            "Enhanced system flexibility for product and operational teams by developing a centralized service to enable or disable all products by aggregators or categories, eliminating manual configuration for over 100+ products and significantly reducing adjustment time.",
+            "Developed RESTful JSON-based services for aggregator integration in the Biller Switching application, ensuring compliance with defined business rules and API standards, and collaborating across SIT, UAT, and production stages to deliver reliable deployments.",
           ]}
         />
 
@@ -58,24 +56,9 @@ const Experience = () => {
           position={"Associate Developer"}
           duration={"March 2024 - February 2025"}
           responsibilities={[
-            "Develops and implements robust features using C# (ASP.NET) for backend APIs and both TypeScript and JavaScript (React) for frontend applications, enhancing system functionality and user experience.",
-            "Participates actively in daily scrum meetings, effectively communicating project progress and collaborating with team members to address challenges and meet deadlines.",
-            "Assures comprehensive documentation for codebases, ensuring maintainability and facilitating easier understanding for other developers.",
-          ]}
-        />
-
-        <ExperienceComponent
-          logo={logo_ssc}
-          link={
-            "https://www.wwdcscholars.com/s/733897F2-0FE6-4E59-A716-88E5D3DFF5EC/2024"
-          }
-          companyName={"Swift Student Challenge Winner"}
-          position={"iOS Developer"}
-          duration={"November 2023 - March 2024 (5 months)"}
-          responsibilities={[
-            "Developed an Artificial Intelligence-based iOS application to recognize human’s emotion, perform sentiment analysis, and predict most dominant languages.",
-            "Utilized CreateML to train the Emotion Classifier Model using the FER-2013 dataset with seven emotion types",
-            "Adopted the MVC architecture pattern and code refactoring technique to ensure code modularity and reusability.",
+            "Built and maintained full-stack applications using C# (ASP.NET) for backend APIs and React with TypeScript for frontend, ensuring seamless integration, high performance, and an intuitive user experience.",
+            "Collaborated actively in daily scrum meetings, effectively communicating project progress and collaborating with team members to address challenges and meet deadlines",
+            "Maintained comprehensive codebase documentation, ensuring long-term maintainability and facilitating onboarding for other developers.",
           ]}
         />
 
@@ -86,22 +69,9 @@ const Experience = () => {
           position={"Back End Instructor"}
           duration={"October 2023 - May 2024 (8 months)"}
           responsibilities={[
-            "Instructed Back End Development using PHP Framework (Laravel).",
-            "Facilitated sessions on using GitHub as a source control platform.",
-            "Assessed both Mid and Final Projects as well as giving suggestions for potential improvements",
-          ]}
-        />
-
-        <ExperienceComponent
-          logo={logo_binus}
-          link={"https://socs.binus.ac.id/"}
-          companyName={"Bina Nusantara University"}
-          position={"Undergraduate Computer Science Student"}
-          duration={"September 2022 - TBA"}
-          responsibilities={[
-            "Specializing in Intelligent Systems with AI-Related Courses: Deep Learning, Computer Vision, and Natural Language Processing",
-            "Collaborated with other peers to compete in Software Development and Business Case Competition (Gemastik).",
-            "Appointed as Bee Tutor Plus (Innovative programing aiming to improve student s English proficiency through individualized one-on-one instruction)",
+            "Delivered online sessions on Back End Development using the Laravel framework, guiding 15+ students in mastering MVC architecture and collaborative version control through GitHub.",
+            "Designed teaching slides and interactive materials to simplify complex backend concepts, fostering a two-way learning environment where students actively engaged through questions and discussions.",
+            "Assessed Mid and Final Projects for two classes, providing detailed feedback that improved students’ project architecture and code quality by emphasizing maintainability and best practices.",
           ]}
         />
 
