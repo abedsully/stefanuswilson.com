@@ -42,14 +42,13 @@ const About = () => {
           </div>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Stefanus Albert Wilson is a software enthusiast with a strong
-            interest in{" "}
-            <span className="font-semibold">
-              Back-End Development and iOS Engineering.
-            </span>{" "}
-            Renowned for his critical thinking and problem-solving skills,
-            Stefanus continues to refine his expertise by building applications
-            that deliver meaningful impact and reliable user experiences.
+            Stefanus Albert Wilson is a software engineer working across
+            back-end and front-end development, with a long-running passion
+            for{" "}
+            <span className="font-semibold">iOS engineering</span>. Known for
+            his critical thinking and problem-solving, he builds systems that
+            are reliable, maintainable, and genuinely useful to the people who
+            depend on them day to day.
           </h1>
 
           <div>
@@ -95,47 +94,90 @@ const About = () => {
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
             In both <span className="font-semibold">2024</span> and{" "}
-            <span className="font-semibold">2025</span>, Stefanus Albert was
-            awarded the prestigious{" "}
+            <span className="font-semibold">2025</span>, Stefanus was awarded
+            the{" "}
             <a
               href="https://developer.apple.com/swift-student-challenge/"
               className="font-semibold underline"
             >
               Apple Swift Student Challenge
             </a>
-            , marking his achievement as a{" "}
-            <span className="font-semibold">two-time WWDC winner</span>. This
-            recognition reflects his enduring passion for{" "}
-            <span className="font-semibold">iOS engineering</span> and his
-            ability to bring innovative ideas into impactful applications.
+            , making him a{" "}
+            <span className="font-semibold">two-time winner</span>. His 2025
+            entry, <span className="font-semibold">GuardUp</span>, is a
+            SwiftUI application built to support people facing harassment and
+            cyberbullying, recognized by Apple for its innovation and social
+            impact. Both projects reflect what he enjoys most about iOS work:
+            shipping something complete, considered, and human on a hard
+            deadline.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Alongside his passion for iOS, Stefanus is currently focusing on{" "}
-            <span className="font-semibold">Back-End Engineering</span>, where
-            he explores system design, scalability, and performance
-            optimization. His work emphasizes building reliable, efficient, and
-            maintainable systems that support modern applications and high-level
-            infrastructure needs.
+            <span className="font-semibold">Back-end.</span> Stefanus works
+            primarily in back-end engineering, where his interests are system
+            design, scalability, and performance. He builds service-oriented
+            and microservice architectures using{" "}
+            <span className="font-semibold">Spring Boot</span> and{" "}
+            <span className="font-semibold">Go</span>, with experience in
+            event-driven communication through{" "}
+            <span className="font-semibold">Kafka</span>, containerized
+            deployment with <span className="font-semibold">Docker</span>, and
+            system observability using the{" "}
+            <span className="font-semibold">ELK stack</span>. His emphasis is
+            on services that stay maintainable long after the first release.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Currently, Stefanus is in his third year (sixth semester) at Binus
-            University, specializing in Intelligent Systems, where he deepens
-            his understanding of machine learning fundamentals, including Deep
-            Learning, Computer Vision, Natural Language Processing, and Speech
-            Recognition.
+            <span className="font-semibold">Front-end.</span> He builds
+            interfaces with <span className="font-semibold">React</span> and{" "}
+            <span className="font-semibold">TypeScript</span>, most often the
+            kind that sit on top of dense operational data — dashboards and
+            internal tools where clarity matters more than decoration, and
+            where a confusing screen becomes a correctness problem rather than
+            a cosmetic one.
           </h1>
 
           <h1 className="font-inter w-full text-start space-y-4 leading-7">
-            Alongside his studies, he works as an IT Developer at <span> </span>
+            <span className="font-semibold">iOS.</span> Alongside his
+            professional work, he continues to build with{" "}
+            <span className="font-semibold">Swift</span> and{" "}
+            <span className="font-semibold">SwiftUI</span>, applying MVVM
+            architecture and reactive state management to create applications
+            that feel considered end to end.
+          </h1>
+
+          <h1 className="font-inter w-full text-start space-y-4 leading-7">
+            At{" "}
             <a href="https://hibank.co.id" className="font-semibold underline">
               PT Bank Hibank Indonesia
             </a>
-            . In this role, he contributes to modernizing internal systems by
-            developing scalable backend services, enhancing system architecture,
-            and improving application reliability to better support business
-            operations.
+            , Stefanus worked as an IT Developer on the Biller Switching
+            platform. He revamped the application using Spring Boot to support
+            multi-file uploads, improving data reconciliation efficiency by{" "}
+            <span className="font-semibold">50%</span> and collapsing a
+            backlog of up to 40 daily files into a single batch. He rebuilt
+            the frontend in React and TypeScript for faster load times and
+            more maintainable components, developed RESTful services for
+            aggregator integration across SIT, UAT, and production, and built
+            a centralized service allowing operational teams to enable or
+            disable 100+ products by aggregator or category without manual
+            configuration. He also implemented log monitoring and
+            observability with the ELK stack, improving error visibility and
+            speeding up issue resolution.
+          </h1>
+
+          <h1 className="font-inter w-full text-start space-y-4 leading-7">
+            Previously, he built and maintained full-stack applications at the
+            Bina Nusantara IT Division using C# (ASP.NET) and React with
+            TypeScript, and taught back-end development with Laravel to 15+
+            students as an instructor at the Bina Nusantara Computer Club.
+          </h1>
+
+          <h1 className="font-inter w-full text-start space-y-4 leading-7">
+            Stefanus graduated from{" "}
+            <span className="font-semibold">Bina Nusantara University</span>{" "}
+            with a Bachelor of Computer Science in{" "}
+            <span className="font-semibold">March 2026</span>.
           </h1>
 
           <div className="mt-[2rem]">
